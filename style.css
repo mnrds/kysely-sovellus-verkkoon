@@ -1,0 +1,33 @@
+body {
+    background-color: snow;
+    padding: 1rem;
+}
+
+#kysymys {
+    background-color: rgb(23, 187, 23);
+    border-radius: 15px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.vaihtoehto {
+    background-color: rgb(21, 127, 226);
+    border-radius: 15px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.vaihtoehto:hover {
+    background-color: rgb(1, 95, 153);
+}
+
+#seuraava {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#nappi {
+    text-align: center;
+}
