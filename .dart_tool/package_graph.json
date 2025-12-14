@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "kysely_sovellus"
+  ],
+  "packages": [
+    {
+      "name": "kysely_sovellus",
+      "version": "0.0.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}

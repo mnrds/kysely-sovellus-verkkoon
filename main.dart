@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:convert';
 
 main() async {
   var osoite = 'kysymykset.json';
@@ -7,7 +8,7 @@ main() async {
 
   var kysymykset = sanakirja['kysymykset'];
 
-  querySelector('#seuraava').onClick.listen((e) {
+  querySelector('#seuraava')!.onClick.listen((e) {
     kysymykset.shuffle();
     asetaKysymys(kysymykset[0]);
   });
@@ -19,11 +20,11 @@ asetaKysymys(kysymys) {
 }
 
 asetaKysymysteksti(teksti) {
-  querySelector('#kysymys').text = teksti;
+  querySelector('#kysymys')!.text = teksti;
 }
 
 asetaVastausvaihtoehdot(vaihtoehdot) {
-  querySelector('#vastaukset').children.clear();
+  querySelector('#vastaukset')!.children.clear();
 
   for (var i = 0; i < vaihtoehdot.length; i++) {
     lisaaVastausvaihtoehto(vaihtoehdot[i]);
@@ -43,5 +44,6 @@ lisaaVastausvaihtoehto(vaihtoehto) {
     }
   });
 
-  querySelector('#vastaukset').children.add(elementti);
+  querySelector('#vastaukset')!.children.add(elementti);
 }
+
